@@ -50,7 +50,7 @@ li:hover {
 .p-active {
   transform: scale(1.2);
   color: rgba(255, 255, 255, 0.712);
-  border: 1px solid black;
+  border: 1px solid crimson;
 }
 
 .b-table {
@@ -98,7 +98,7 @@ title {
     justify-content: center;
     height: 40vh;
     align-items: center;
-    background: rgba(52, 58, 64, 0.9) !important;
+    background: rgba(220, 20, 60, 0.486) !important;
     border-radius: 0 0 40px 40px;
     transition: all 0.8s ease-in-out;
     transform: translateY(0);
