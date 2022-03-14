@@ -98,7 +98,7 @@ title {
     justify-content: center;
     height: 40vh;
     align-items: center;
-    background: crimson !important;
+    background: rgba(220, 20, 60, 0.486) !important;
     border-radius: 0 0 40px 40px;
     transition: all 0.8s ease-in-out;
     transform: translateY(0);
