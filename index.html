@@ -2,74 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css" />
-    <title>Awesome Books</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="icon" type="image/jpg" href="./logo.jpg">
+  <title class=""></title>
 </head>
 
 <body>
+  <nav class="
+        w-100
+        bg-danger
+        navigation
+        text-white
+        font-weight-bold
+        position-fixed
+        fixed-top
+        d-flex
+      ">
+    <i class="fa fa-bars fa-2x d-none m-3 mr-4 ml-auto humburger"></i>
+    <i class="fa cancel-btn fa-times m-3 mt-0 ml-auto fa-2x d-none"></i>
 
-    <header id="header">
-        <nav class="navbar">
-            <a href="#" id="nav-header">Awesome Books</a>
-            <ul class="navbar-list">
-                <li class="test"><a class="listBtn active" href="#book-list-section">List </a></li>
-                <li id="new"><a class="listBtn" href="#book-add-section">Add New</a></li>
-                <li id="contact"><a class="listBtn" href="#book-contact-section">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <ul class="d-flex w-100 p-3 pr-5">
+      <li class="mr-auto pl-4">Awesome Books</li>
+      <li class="mr-3 pr-3 border-right border-white openList">List</li>
+      <li class="mr-3 pr-3 border-right border-white openNew">Add new</li>
+      <li class="mr-3 openContact">Contact</li>
+    </ul>
+  </nav>
 
-    <main>
-        <div id="dateWrapper">
-            <p id="date"></p>
-        </div>
+  <div class="mt-5 w-100 d-flex">
+    <p class="timeNow ml-auto mr-4 p-4 pb-0"></p>
+  </div>
 
-        <div class="flex-container">
-            <section class="section active" id="book-list-section">
-                <h1 class="pageTitle">All awesome books</h1>
-                <div id="book-list-container">
-                    <section class="book-list"></section>
-                </div>
-            </section>
+  <div class="s-container container w-100 d-flex flex-column align-items-center">
+    <div class="listBook container w-100">
+      <h1 class="text-center font-weight-bold pb-3">Awesome books</h1>
+      <table class="
+            table
+            css-table
+            table-striped
+            w-75
+            ml-auto
+            mr-auto
+            table-hover
+            border
+          ">
+        <tbody id="list"></tbody>
+      </table>
+      <ul class="css-pagination w-100 d-flex justify-content-center flex-row"></ul>
+    </div>
 
-            <section class="section" id="book-add-section">
-                <h1 class="h-add">Add a new book</h1>
-                <form id="formSection">
-                    <label for="title">
-                        <input type="text" id="title" placeholder="Title" required>
-                    </label>
-                    <label for="author">
-                        <input type="text" id="author" placeholder="Author" required>
-                    </label>
-                    <button class="btn-submit" type="submit" value="Add"> Add</button>
-                </form>
-            </section>
-
-            <section class="section" id="book-contact-section">
-                <h1>Contact Information</h1>
-                <div>
-                    <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
-                </div>
-
-                <ul id="contact-list">
-                    <li>Our email: micronauts@microverse.com</li>
-                    <li>Our phone number : 11117770999</li>
-                    <li>Our address : Microverse 23, 53215 Microcity, Microland.</li>
-                </ul>
-            </section>
-        </div>
-    </main>
-
-    <footer id="footer">
-        <p>Copyright &copy; <span>alfacamp</span></p>
-    </footer>
-
-    <script language="JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-
-    <script type="module" src="./index.js"></script>
+    <div class="
+          inputs
+          ml-auto
+          mr-auto
+          flex-column
+          align-items-center
+          w-50
+          form-group
+          d-none
+        ">
+      <h2 class="text-center mt-5 font-weight-bold">ADD A NEW BOOK</h2>
+      <input type="text" class="form-control mt-3 p-3" id="title" placeholder="Title" />
+      <input type="text" class="form-control mt-3 p-3" id="author" placeholder="Author" />
+      <button type="button" class="h-100 align-self-end p-3 mt-3 btn btn-dark buttonClass">
+        Add item
+      </button>
+    </div>
+  </div>
+  <div class="contact d-none m-auto flex-column align-items-center w-100">
+    <h2 class="text-center font-weight-bold pb-3">Contact Information</h2>
+    <p class="">
+      Doyou have anny question or you just want to say "Hello" <br />
+      You can reachout to us!
+    </p>
+    <ul class="ml-5">
+      <li>
+        - Our e-mail: <i class="font-weight-bold"><u>kalumunabisimwa5@gmail</u></i>
+      </li>
+      <li>
+        - Our phone number: <i class="font-weight-bold"><u> 0785483721</u></i>
+      </li>
+      <li>
+        - Our Adresses : <i class="font-weight-bold"><u>Kg</u></i>
+      </li>
+    </ul>
+  </div>
+  <footer class="bg-danger text-white mt-5 p-3 position-fixed w-100 fixed-bottom">
+    &copy;2021
+  </footer>
+  <script src="./luxon.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
