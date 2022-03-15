@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.s-container {
+  transform: scale(0.7);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.p-item {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #8f8f8f;
+}
+
+.p-link {
+  padding: 0;
+  margin: 0;
+}
+
+.p-item:hover {
+  background-color: #c9c8c888;
+  transition: all 0.2s ease;
+}
+
+.p-active {
+  transform: scale(1.2);
+  color: rgba(255, 255, 255, 0.712);
+  border: 1px solid crimson;
+}
+
+.b-table {
+  height: 430px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+title {
+  color: red !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .listBook .css-table {
+    width: 100% !important;
+  }
+
+  .inputs {
+    width: 100% !important;
+  }
+
+  .s-container {
+    transform: translateY(-50px) scale(0.8);
+  }
+
+  .navigation ul {
+    display: none !important;
+  }
+
+  .humburger {
+    display: block !important;
+    color: white;
+    z-index: 999;
+  }
+
+  .humburger:hover {
+    cursor: pointer;
+  }
+
+  .mob-navigation {
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+    background: rgba(220, 20, 60, 0.486) !important;
+    border-radius: 0 0 40px 40px;
+    transition: all 0.8s ease-in-out;
+    transform: translateY(0);
+  }
+
+  .mob-navigation i {
+    display: none !important;
+  }
+
+  .mob-navigation .cancel-btn {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .mob-navigation ul {
+    flex-direction: column;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 20px 0 !important;
+    position: relative;
+  }
+
+  .mob-navigation ul li {
+    border: none !important;
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  .mob-navigation ul li:first-child {
+    display: none;
+  }
+
+  .flue {
+    filter: blur(5px);
+  }
+
+  .navigation-Anim {
+    transform: translateY(-1000px);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .mob-navigation-anim {
+    transform: translateY(-500px);
+  }
+}
