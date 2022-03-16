@@ -38,6 +38,7 @@ npx stylelint "\*_/_.{css,scss}"
 
 And For tracking the linter errors in JavaScript file run:
 
+npx eslint .
 
 👤 **Alfred**
 - GitHub:[GitHub](https://github.com/Alfredbis29)
