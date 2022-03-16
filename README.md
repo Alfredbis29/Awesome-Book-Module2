@@ -26,11 +26,11 @@ Test For tracking linter errors locally you need to follow these steps:
 
 After cloning the project you need to run this command
 
-npm install This command will download all the dependancies of the project
+`npm install` This command will download all the dependancies of the project
 
 For tracking the linter errors in HTML file run:
 
-npx hint .
+`npx hint .`
 
 For tracking the linter errors in CSS file run:
 
@@ -38,7 +38,7 @@ npx stylelint "\*_/_.{css,scss}"
 
 And For tracking the linter errors in JavaScript file run:
 
-npx eslint .
+`npx eslint .`
 
 👤 **Alfred**
 - GitHub:[GitHub](https://github.com/Alfredbis29)
