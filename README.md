@@ -10,8 +10,35 @@ My Awesome Books is a basic website that allows users to add/remove books from a
 - linters
 - JavaScript
 
+
+
 ## Live Demo
 [Live Demo Link](https://alfredbis29.github.io/Awesome-Book-Module2/)
+
+![Screenshot](./assets/Add-Page.png)
+![Book-List](./assets/Book-List.png)
+
+Getting Started
+To get the content of this project locally you need to run this command in your terminal:
+
+[Awesome Books](https://github.com/Alfredbis29/Awesome-Book-Module2.git)
+Test For tracking linter errors locally you need to follow these steps:
+
+After cloning the project you need to run this command
+
+`npm install` This command will download all the dependancies of the project
+
+For tracking the linter errors in HTML file run:
+
+`npx hint .`
+
+For tracking the linter errors in CSS file run:
+
+npx stylelint "\*_/_.{css,scss}"
+
+And For tracking the linter errors in JavaScript file run:
+
+`npx eslint .`
 
 👤 **Alfred**
 - GitHub:[GitHub](https://github.com/Alfredbis29)
