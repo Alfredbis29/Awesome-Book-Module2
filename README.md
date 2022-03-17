@@ -15,8 +15,10 @@ My Awesome Books is a basic website that allows users to add/remove books from a
 ## Live Demo
 [Live Demo Link](https://alfredbis29.github.io/Awesome-Book-Module2/)
 
-![Screenshot](./assets/Add-Page.png)
-![Book-List](./assets/Book-List.png)
+![Screen Shot 2022-03-17 at 10 40 53](https://user-images.githubusercontent.com/88894525/158770656-aa8f1ecf-784b-42e7-9e5c-54b8c021015a.png)
+
+![Screen Shot 2022-03-17 at 10 38 30](https://user-images.githubusercontent.com/88894525/158770356-c2b99f8f-df9a-4541-a65f-3c98f2445569.png)
+
 
 Getting Started
 To get the content of this project locally you need to run this command in your terminal:
