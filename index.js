@@ -22,7 +22,7 @@ class UseBook {
       paginationLi.className = 'p-item rounded-circle text-center d-flex justify-content-center';
       paginationLi.id = i;
       if (current === paginationLi.id) {
-        paginationLi.classList.add('bg-dark');
+        paginationLi.classList.add('bg-danger');
         paginationLi.classList.add('p-active');
       } else {
         paginationLi.classList.remove('active');
@@ -84,13 +84,15 @@ class UseBook {
       `;
       book.appendChild(btnContainer);
       deleteBtn.id = abook.title;
-      deleteBtn.className = 'btn btn-dark';
+      deleteBtn.className = 'btn btn-danger';
       btnContainer.className = 'd-flex justify-content-end';
       list.appendChild(book);
       btnContainer.appendChild(deleteBtn);
       deleteBtn.addEventListener('click', () => {
         if (deleteBtn.id === abook.title) {
-          const index = bookFound.findIndex((rBook) => rBook.title === deleteBtn.id);
+          const index = bookFound.findIndex(
+            (rBook) => rBook.title === deleteBtn.id,
+          );
           bookFound.splice(index, 1);
           localStorage.setItem('books', JSON.stringify(bookFound));
           UseBook.displayBooks(current);
@@ -134,7 +136,7 @@ addButton.addEventListener('click', () => {
       `;
     book.appendChild(btnContainer);
     deleteBtn.id = abook.title;
-    deleteBtn.className = 'btn btn-dark';
+    deleteBtn.className = 'btn btn-danger';
     btnContainer.className = 'd-flex justify-content-end';
     list.appendChild(book);
     btnContainer.appendChild(deleteBtn);
